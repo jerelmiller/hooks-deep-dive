@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import CustomCounterHook from './CustomCounterHook';
+import StateHookExample from './StateHookExample';
+import CallbackHook from './CallbackHook';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>State hook</h2>
+      <StateHookExample initialValue={2} />
+      <h2>Custom hook</h2>
+      <CustomCounterHook initialValue={2} />
+      <h2>Callback hook</h2>
+      <CallbackHook initialValue={1} />
     </div>
   );
 }
